@@ -4,7 +4,7 @@ public class DS400Factory implements JudgeIngredientFactory {
     //400m游泳、蜻蜓
     @Override
     public Race CreateRace() {
-        return new Dragonfly();
+        return new SCboy();
     }
 
     @Override

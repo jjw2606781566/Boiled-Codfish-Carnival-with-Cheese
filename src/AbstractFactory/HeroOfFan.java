@@ -1,8 +1,8 @@
 package AbstractFactory;
 
-public class RedRab implements Race {
+public class HeroOfFan implements GameType{
     @Override
     public String toString() {
-        return "RedRab";
+        return "HeroOfFan";
     }
 }

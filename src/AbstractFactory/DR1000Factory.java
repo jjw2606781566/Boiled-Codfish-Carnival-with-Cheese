@@ -1,14 +1,14 @@
 package AbstractFactory;
 
-public class DR1000Factory implements JudgeIngredientFactory {
-    //1000m跑、蜻蜓
+public class SCLoreOfLUFactory implements JudgeIngredientFactory {
+    //卢氏传说、星际老男孩
     @Override
     public Race CreateRace() {
-        return new Dragonfly();
+        return new SCboy();
     }
 
     @Override
     public GameType CreateType() {
-        return new OneThousandMetersRunning();
+        return new LoreOfLU();
     }
 }

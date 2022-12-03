@@ -15,28 +15,24 @@ public class JudgeStore {
         JudgeIngredientFactory factory;
 
         switch (JudgeName) {
-            case "MS400":
-                factory = new MS400Factory();
+            case "LoreOfLU"://LL 卢氏传说
+                factory = new LoreOfLUFactory();
                 judge.setFactory(factory);
                 break;
-            case "DS400":
-                factory = new DS400Factory();
+            case "SeaCraft"://SC 星河争霸3
+                factory = new SeaCraftFactory();
                 judge.setFactory(factory);
                 break;
-            case "MR100":
-                factory = new MR100Factory();
+            case "MgaicWarCraft"://MWC 魔怪争霸2
+                factory = new MgaicWarCraftFactory();
                 judge.setFactory(factory);
                 break;
-            case "DR100":
-                factory = new DR100Factory();
+            case "ForwardWatch"://FW 守望前锋：再也不来
+                factory = new ForwardWatchFactory();
                 judge.setFactory(factory);
                 break;
-            case "MR1000":
-                factory = new MR1000Factory();
-                judge.setFactory(factory);
-                break;
-            case "DR1000":
-                factory = new DR1000Factory();
+            case "HeroOfFan"://HOF 风扇英雄
+                factory = new HeroOfFanFactory();
                 judge.setFactory(factory);
                 break;
             default:
@@ -46,7 +42,7 @@ public class JudgeStore {
         return judge;
     }
 
-    //设置项目、种族
+    //设置项目、国籍
     public Judge orderJudge(String JudgeName) {
         Judge judge = createJudge(JudgeName);
         judge.setGameType(judge.getFactory().CreateType());

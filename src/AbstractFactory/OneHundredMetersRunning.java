@@ -1,8 +1,8 @@
 package AbstractFactory;
 
-public class OneHundredMetersRunning implements GameType {
+public class SeaCraft implements GameType {
     @Override
     public String toString() {
-        return "OneHundredMetersRunning";
+        return "SeaCraft";
     }
 }
