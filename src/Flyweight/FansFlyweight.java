@@ -1,11 +1,11 @@
 package Flyweight;
 
 
-import Prototype.EDGFans;
-import Prototype.IGFans;
-import Prototype.RNGFans;
-
 import java.util.Scanner;
+
+import Prototpye_Flyweight.EDGFans;
+import Prototpye_Flyweight.IGFans;
+import Prototpye_Flyweight.RNGFans;
 
 public class FansFlyweight {
     private static final String nations[] =

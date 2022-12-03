@@ -1,4 +1,4 @@
-package Prototype;
+package Prototpye_Flyweight;
 
 public class RNGFans extends Fans {
     public RNGFans() {

@@ -1,4 +1,4 @@
-package Prototype;
+package Prototpye_Flyweight;
 
 
 import java.util.Scanner;

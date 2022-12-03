@@ -1,4 +1,4 @@
-package Prototype;
+package Prototpye_Flyweight;
 
 public class IGFans extends Fans {
     public IGFans() {

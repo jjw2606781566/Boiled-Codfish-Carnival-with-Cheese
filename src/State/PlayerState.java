@@ -1,6 +1,6 @@
 package State;
 
-public abstract class AnimalState {
+public abstract class PlayerState {
 
     protected StateContext stateContext;
 

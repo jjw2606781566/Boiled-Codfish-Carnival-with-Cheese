@@ -1,6 +1,6 @@
 package State;
 
-public class StateTired extends AnimalState {
+public class StateTired extends PlayerState {
     @Override
     public void drinkCoffee() {
         super.stateContext.setAnimalState(new StateGood());

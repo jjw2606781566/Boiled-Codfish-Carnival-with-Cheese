@@ -1,6 +1,6 @@
 package SimpleFactory;
 
-import State.AnimalState;
+import State.PlayerState;
 
 public class Athlete {
     private String AnimalName;
@@ -10,7 +10,7 @@ public class Athlete {
     private double physical;
     private double strength;
     private double skill;
-    private AnimalState animalState;
+    private PlayerState animalState;
     private int[] Rank;
     private double[] Score;
 
@@ -113,11 +113,11 @@ public class Athlete {
         Score = score;
     }
 
-    public AnimalState getAnimalState() {
+    public PlayerState getAnimalState() {
         return animalState;
     }
 
-    public void setAnimalState(AnimalState animalState) {
+    public void setAnimalState(PlayerState animalState) {
         this.animalState = animalState;
     }
 

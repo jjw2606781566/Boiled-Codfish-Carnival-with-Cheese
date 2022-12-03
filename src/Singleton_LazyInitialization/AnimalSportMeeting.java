@@ -13,7 +13,7 @@ import FactoryMethod.SportShoesFactory;
 import Iterator.AthleteContainer;
 import Iterator.GameContainer;
 import Mediator.CMediatorFn;
-import Prototpye_Flyweight.CPrototypeFn;
+import Prototpye_Flyweight.PrototypeFunction;
 import Proxy.ProxyScoreSheet;
 import Proxy.ScoreSheet;
 import Servant.Preparation;
@@ -266,7 +266,7 @@ public class AnimalSportMeeting {
                     break;
                 case 6:
                     try {
-                        CPrototypeFn.PrototypeFn();
+                        PrototypeFunction.PrototypeFn();
                     } catch (CloneNotSupportedException e) {
                         e.printStackTrace();
                     }

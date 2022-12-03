@@ -1,6 +1,6 @@
 package State;
 
-public class StatePerfect extends AnimalState {
+public class StatePerfect extends PlayerState {
     @Override
     public void drinkCoffee() {
     }

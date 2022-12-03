@@ -38,8 +38,8 @@ import Mediator.ConcreteOthers;
 import NullObject.AbstractCustomer;
 import NullObject.CustomerFactory;
 import Observer.ScoreSubject;
-import Prototpye_Flyweight.AttributeFactory;
-import Prototpye_Flyweight.DogAudience;
+import Flyweight.AttributeFactory;
+import Prototpye_Flyweight.EDGFans;
 import Proxy.ProxyScoreSheet;
 import Proxy.ScoreSheet;
 import Servant.Preparation;
@@ -50,8 +50,8 @@ import Visitor.CVisitorFn;
 
 import java.util.ArrayList;
 
-import static Prototpye_Flyweight.FlyweightPattern.getRandomAge;
-import static Prototpye_Flyweight.FlyweightPattern.getRandomSex;
+import static Flyweight.FansFlyweight.getRandomAge;
+import static Flyweight.FansFlyweight.getRandomSex;
 
 public class MainTest {
     //单例模式
@@ -161,8 +161,8 @@ public class MainTest {
         System.out.println("类：JudgeStore");
         System.out.println("实现接口：judge = JudgeStore.getInstance().orderJudge(String JudgeName)");
         System.out.println("测试信息：");
-        Judge judge = JudgeStore.getInstance().orderJudge("DR100");
-        judge.setJudgeName("蜻蜓队长");
+        Judge judge = JudgeStore.getInstance().orderJudge("SCSC");
+        judge.setJudgeName("星际老男孩");
         System.out.println("裁判创建成功！");
         System.out.println("裁判姓名：" + judge.getJudgeName());
         System.out.println("比赛项目：" + judge.getGameType().toString());
@@ -438,10 +438,10 @@ public class MainTest {
         System.out.println("实现接口：AttributeFactory.setDogAudience()");
         System.out.println("测试信息：");
         System.out.println("观众创建成功！");
-        DogAudience dogAudience = (DogAudience) AttributeFactory.setDogAudience("White");
-        dogAudience.setAge(getRandomAge());
-        dogAudience.setSex(getRandomSex());
-        dogAudience.printRace();
+        EDGFans EDGFan = (EDGFans) AttributeFactory.setEDGFans("White");
+        EDGFan.setAge(getRandomAge());
+        EDGFan.setSex(getRandomSex());
+        EDGFan.printClub();
         System.out.println();
     }
 
@@ -452,15 +452,15 @@ public class MainTest {
         System.out.println("类：AudienceCache");
         System.out.println("实现接口：AudienceCache.getAudience(String audienceId)");
         System.out.println("测试信息：");
-        DogAudience dogAudience1 = (DogAudience) AttributeFactory.setDogAudience("Brown");
-        dogAudience1.setAge(getRandomAge());
-        dogAudience1.setSex(getRandomSex());
-        dogAudience1.printRace();
+        EDGFans EDGFans1 = (EDGFans) AttributeFactory.setEDGFans("China");
+        EDGFans1.setAge(getRandomAge());
+        EDGFans1.setSex(getRandomSex());
+        EDGFans1.printClub();
         System.out.println("Clone Successfully!");
-        DogAudience dogAudience2 = (DogAudience) AttributeFactory.setDogAudience("Brown");
-        dogAudience2.setAge(getRandomAge());
-        dogAudience2.setSex(getRandomSex());
-        dogAudience2.printRace();
+        EDGFans EDGFans2 = (EDGFans) AttributeFactory.setEDGFans("China");
+        EDGFans2.setAge(getRandomAge());
+        EDGFans2.setSex(getRandomSex());
+        EDGFans2.printClub();
         System.out.println();
     }
 

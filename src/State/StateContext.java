@@ -1,9 +1,9 @@
 package State;
 
 public class StateContext {
-    private AnimalState animalState;
+    private PlayerState animalState;
 
-    public void setAnimalState(AnimalState animalState) {
+    public void setAnimalState(PlayerState animalState) {
         this.animalState = animalState;
 
         this.animalState.setContext(this);

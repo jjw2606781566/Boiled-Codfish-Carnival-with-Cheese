@@ -1,4 +1,4 @@
-package Prototype;
+package Prototpye_Flyweight;
 
 public abstract class Fans implements Cloneable{
     public String nation;
