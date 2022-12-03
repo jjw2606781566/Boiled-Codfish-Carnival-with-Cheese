@@ -1,7 +1,7 @@
 package AbstractFactory;
 
-public class DS400Factory implements JudgeIngredientFactory {
-    //400m游泳、蜻蜓
+public class SCHeroOfFanFactory implements JudgeIngredientFactory {
+    //风扇英雄
     @Override
     public Race CreateRace() {
         return new SCboy();
@@ -9,6 +9,6 @@ public class DS400Factory implements JudgeIngredientFactory {
 
     @Override
     public GameType CreateType() {
-        return new FourHundredMetersSwimming();
+        return new HeroOfFan();
     }
 }

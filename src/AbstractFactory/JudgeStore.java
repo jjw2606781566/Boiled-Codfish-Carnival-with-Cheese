@@ -15,24 +15,44 @@ public class JudgeStore {
         JudgeIngredientFactory factory;
 
         switch (JudgeName) {
-            case "LoreOfLU"://LL 卢氏传说
-                factory = new LoreOfLUFactory();
+            case "SCLL"://LL 卢氏传说 SC
+                factory = new SCForwardWatchFactory();
                 judge.setFactory(factory);
                 break;
-            case "SeaCraft"://SC 星河争霸3
-                factory = new SeaCraftFactory();
+            case "SCSC"://SC 星河争霸3 SC
+                factory = new SCHeroOfFanFactory();
                 judge.setFactory(factory);
                 break;
-            case "MgaicWarCraft"://MWC 魔怪争霸2
-                factory = new MgaicWarCraftFactory();
+            case "SCMWC"://MWC 魔怪争霸2 SC
+                factory = new SCLoreOfLUFactory();
                 judge.setFactory(factory);
                 break;
-            case "ForwardWatch"://FW 守望前锋：再也不来
-                factory = new ForwardWatchFactory();
+            case "SCFW"://FW 守望前锋：再也不来 SC
+                factory = new SCMgaicWarCraftFactory();
                 judge.setFactory(factory);
                 break;
-            case "HeroOfFan"://HOF 风扇英雄
-                factory = new HeroOfFanFactory();
+            case "SCHOF"://HOF 风扇英雄 SC
+                factory = new SCSeaCraftFactory();
+                judge.setFactory(factory);
+                break;
+            case "RRLL"://LL 卢氏传说 RR
+                factory = new RRForwardWatchFactory();
+                judge.setFactory(factory);
+                break;
+            case "RRSC"://SC 星河争霸3 RR
+                factory = new RRHeroOfFanFactory();
+                judge.setFactory(factory);
+                break;
+            case "RRMWC"://MWC 魔怪争霸2 RR
+                factory = new RRLoreOfLUFactory();
+                judge.setFactory(factory);
+                break;
+            case "RRFW"://FW 守望前锋：再也不来 RR
+                factory = new RRMgaicWarCraftFactory();
+                judge.setFactory(factory);
+                break;
+            case "RRHOF"://HOF 风扇英雄 RR
+                factory = new RRSeaCraftFactory();
                 judge.setFactory(factory);
                 break;
             default:

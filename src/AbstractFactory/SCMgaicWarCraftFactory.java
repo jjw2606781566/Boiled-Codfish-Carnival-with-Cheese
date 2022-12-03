@@ -1,7 +1,7 @@
 package AbstractFactory;
 
-public class DR100Factory implements JudgeIngredientFactory {
-    //100m赛跑、蜻蜓
+public class SCMgaicWarCraftFactory implements JudgeIngredientFactory {
+    //SCboy、MW
     @Override
     public Race CreateRace() {
         return new SCboy();
@@ -9,6 +9,6 @@ public class DR100Factory implements JudgeIngredientFactory {
 
     @Override
     public GameType CreateType() {
-        return new OneHundredMetersRunning();
+        return new MgaicWarCraft();
     }
 }
